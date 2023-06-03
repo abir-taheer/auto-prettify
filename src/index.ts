@@ -1,11 +1,9 @@
 require('dotenv').config();
 import cluster, { Worker } from 'cluster';
-import setupApp from './app';
+import { app } from './app';
 import { PORT } from './constants';
 
 export async function run() {
-  const app = await setupApp();
-
   if (process.env.NODE_ENV === 'production') {
     if (cluster.isPrimary) {
       console.log(
@@ -27,7 +25,7 @@ export async function run() {
         cluster.fork();
       });
     } else {
-      // Code to run inside of a worker
+      // Code to run inside a worker
       app.listen(PORT, () =>
         console.log(`Worker ${cluster.worker.id} listening on port ${PORT}`)
       );
