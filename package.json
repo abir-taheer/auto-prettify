@@ -15,7 +15,7 @@
     "caprover": "npm run migrate && npm start"
   },
   "dependencies": {
-    "@faker-js/faker": "^7.6.0",
+    "@faker-js/faker": "^8.0.2",
     "@prisma/client": "^4.15.0",
     "body-parser": "latest",
     "cookie-parser": "^1.4.6",
