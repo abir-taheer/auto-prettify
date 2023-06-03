@@ -22,7 +22,7 @@
     "dotenv": "latest",
     "express": "latest",
     "morgan": "^1.10.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^5.0.1"
   },
   "devDependencies": {
     "@types/chai": "^4.3.4",
