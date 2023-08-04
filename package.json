@@ -15,7 +15,7 @@
     "caprover": "npm run migrate && npm start"
   },
   "dependencies": {
-    "@prisma/client": "^4.15.0",
+    "@prisma/client": "^5.1.1",
     "body-parser": "latest",
     "cookie-parser": "^1.4.6",
     "dotenv": "latest",
